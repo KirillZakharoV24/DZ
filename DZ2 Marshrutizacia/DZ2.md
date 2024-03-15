@@ -8,5 +8,5 @@ _IP протокол_ отвечает за адресацию. Его зада�
 
 ## Telnet
 
-![Скрин]() 
+![Скрин](https://github.com/KirillZakharoV24/DZ/blob/main/DZ2%20Marshrutizacia/Monosnap%20Telnet%20https___journal.top-academy.ru%20202.png) 
 
