@@ -5,6 +5,14 @@
 4. Назначаем пароли для пользователей sudo passwd "UserName"
 Проверяем создание пользователей, принадлежность к группам и пароли чтением файлов group, passwd, shadow при помощи команды sudo cat etc/
 
+Результат создания пользователей
+
+![Group](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/group.png)
+
+![Passwd](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/passwd.png)
+
+![Shadow](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/shadow.png)
+
 # Создание пользователя вручную путём редактирования файлов (nano)
 
 #### 1. Чтобы вручную добавить нового пользователя в систему в
@@ -18,6 +26,8 @@ testuser:x:3000:3000:test user:/home/testuser:/bin/bash
 комментарий, гласящий «test user», домашний каталог
 установлен как "/home/testuser", а командная оболочка
 – как "/bin/bash". Cохраните файл.
+
+![Passwd](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/CreateNewUserPasswd.png)
 
 #### 2. Необходимо добавить запись в /etc/shadow для этого пользователя. 
 
@@ -33,12 +43,16 @@ testuser: $1$1234567890123456789012345678901:11664:0:-1:-
 1:-1:-1:0
 Сохраните внесенные изменения.
 
+![Shadow](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/CreateNewUserShadow.png)
+
 #### 3. Теперь необходимо определить пароль для нового пользователя. 
 Введите в командной строке команду
 passwd testuser и определите пароль пользователя.
 
 #### 4. Если решено добавить созданного пользователя к уже имеющейся группе, то не понадобиться создавать новую группу в /etc/groups. Если это не так, то необходимо добавить новую группу для этого пользователя, введя в файл следующую строку:
 testuser:x:3000:
+
+![Group](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/CreateNewUserGroup.png)
 
 #### 5. Создание домашнего каталога нового пользователя.
 
@@ -52,11 +66,21 @@ chown testuser:testuser testuser
 
 chmod o-rwx testuser
 
+Результаты добавления пользователя:
+
+![AllUsersPasswd](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/AllUsersPasswd.png)
+
+![AllUsersGroup](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/AllUSersGroup.png)
+
+![AllUsersShadow](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/AllUsersShadow.png)
+
 # Удаление пользователя с директорией
 
 Удаляем пользователя вместе с его директорией при помощи команды: 
 
 sudo userdel -r "UserName"
+
+![DelPetrov](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/DeletePetrov.png)
 
 # Файлы /etc/profile и $HOME/.profile.
 
@@ -83,4 +107,14 @@ sudo userdel -r "UserName"
 Каталог /etc/skel/: каталог с файлами по умолчанию, которые копируются в домашний каталог каждого пользователя
 
 # Расшифровка строк в файлах shadow, group, passwd, gshadow
+
+![Passwd](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/Lines/LineEtcPasswd.png)
+
+![Group](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/Lines/LineEtcGroup.png)
+
+![Shadow](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/Lines/LineEtcShadow.png)
+
+![Shadow2](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/Lines/shadowLine.png)
+
+![Gshadow](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5Users/Lines/LineEtcGshadow.png)
 
