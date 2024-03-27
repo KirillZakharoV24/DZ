@@ -16,3 +16,10 @@ __изменяемости__ содержимого.
 #### _Динамические данные_
 - могут изменяться пользователем.
 
+![Priznaki dannix](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.1IerarxiyaKatalogov/Priznaki%20dannix.png)
+
+## Иерархия каталогов Linux
+
+![Ierarxiya katalogov Linux](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.1IerarxiyaKatalogov/Ierarxiya%20katalogov%20Linux.png)
+
+
