@@ -1,13 +1,32 @@
 ## История команд 
 
+![1-22](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.2FilesAndCatalogs/History1-22.png)
+![23-46](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.2FilesAndCatalogs/History%2023-46.png)
+![47-70](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.2FilesAndCatalogs/History47-70.png)
+![71-94](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.2FilesAndCatalogs/History71-94.png)
+![95-99](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.2FilesAndCatalogs/History95-99.png)
 ## Команды head, tail, cal, date
+
+Команда __head__ - показывает первые 10 строк (по умолчанию, но количество отображаемых строк можно изменить) файла.
+
+Команда __tail__ - показывает последние 10 строк (по умолчанию, но количество отображаемых строк можно изменить) файла.
+
+Команда __cal__ - может использоваться для вывода календаря на один месяц, несколько месяцев или на весь год. Она поддерживает Юлианский календарь и может выводить календари для любого заданного пользователем месяца и года.
+
+Команда __date__ - обычно она используется для получения текущих даты и времени при необходимости в заданном формате, но при этом она также позволяет устанавливать их.
+
+![head-tail](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.2FilesAndCatalogs/Head%2BTail.png)
+
+![cal-date](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.2FilesAndCatalogs/Cal%2BDAte.png)
 
 ## Контрольные вопросы
 1-4. Команда __ls__
 
+![ls --help](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.2FilesAndCatalogs/1-4ls-help.jpg)
+
 5. Команда __pwd__ (англ. present working directory — текущий рабочий каталог; или print working directory — вывести рабочий каталог) отображает текущий каталог
 
-6. Команда:__cd__ (cd [полное_имя_каталога])- переход в каталог; __cd ~__ возвращает домашний каталог пользователя в качестве текущего каталога из любого каталога. 
+6. Команда: __cd__ (cd [полное_имя_каталога])- переход в каталог;  __cd ~__ возвращает домашний каталог пользователя в качестве текущего каталога из любого каталога. 
 
 7. Команда __rm__ (rm [опции] файл)- удаляет файлы или каталоги.
 
