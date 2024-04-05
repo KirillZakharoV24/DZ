@@ -67,6 +67,13 @@ __-S__, маска будет отображаться с использован
 $ umask -S
 u=rwx,g=rx,o=rx
 
+
+2. Права доступа и StickyBit
+   ![History1](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.3PravaDostypa/History1.png)
+   ![History2](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.3PravaDostypa/History2.png)
+   ![Check](https://github.com/KirillZakharoV24/DZ/blob/main/Linux/DZ5.3PravaDostypa/3.png)
+
+
 ## Контрольные вопросы
 
 1. Для каких типов пользователей определяется доступ к файлу?
